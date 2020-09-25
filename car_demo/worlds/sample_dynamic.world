@@ -1330,6 +1330,8 @@
     <!-- People -->
     
       <!-- Walking people on cross walk -->
+
+      <!-- velocity = 6km/h -->
       <actor name="walking_0">
         <!-- Starting pose -->
         <pose>12 -210 0 0 0 -0.65</pose>
@@ -1349,7 +1351,7 @@
             </waypoint>
                         
             <waypoint>
-              <time>14</time>
+              <time>12.8</time>
               <pose>29 -223 0 0 0 -0.9</pose>
             </waypoint>
 
@@ -1359,7 +1361,7 @@
             </waypoint>
 
             <waypoint>
-              <time>29</time>
+              <time>27.8</time>
               <pose>13 -211 0 0 0 -3.5</pose>
             </waypoint>
 
@@ -1371,6 +1373,7 @@
         </script>
       </actor>
 
+      <!-- velocity = 4km/h -->
       <actor name="walking_1">
         <!-- Starting pose -->
         <pose>10 -212 0 0 0 -0.65</pose>
@@ -1390,22 +1393,22 @@
             </waypoint>
                         
             <waypoint>
-              <time>21</time>
+              <time>19.3</time>
               <pose>28 -225 0 0 0 -0.9</pose>
             </waypoint>
 
             <waypoint>
-              <time>23</time>
+              <time>22</time>
               <pose>29 -226 0 0 0 -3.5</pose>
             </waypoint>
 
             <waypoint>
-              <time>54</time>
+              <time>41.3</time>
               <pose>12 -213 0 0 0 -3.5</pose>
             </waypoint>
 
             <waypoint>
-              <time>56</time>
+              <time>44</time>
               <pose>11 -212 0 0 0 -0.9</pose>
             </waypoint>
           </trajectory>
@@ -1413,6 +1416,7 @@
       </actor>
 
       <!-- Walking people around osrf_first_office -->
+      <!-- velocity = 4km/h -->
       <actor name="walking_3">
         <!-- Starting pose -->
         <pose>20 -233 0 0 0 2.4</pose>
@@ -1432,27 +1436,27 @@
             </waypoint>
                         
             <waypoint>
-              <time>5</time>
+              <time>4.6</time>
               <pose>15 -232 0 0 0 3.1</pose>
             </waypoint>
 
             <waypoint>
-              <time>10</time>
+              <time>9.3</time>
               <pose>10 -233.5 0 0 0 3.6</pose>
             </waypoint>
 
             <waypoint>
-              <time>15</time>
+              <time>14.55</time>
               <pose>5 -236.5 0 0 0 3.9</pose>
             </waypoint>
 
             <waypoint>
-              <time>20</time>
+              <time>20.3</time>
               <pose>0 -240.5 0 0 0 3.9</pose>
             </waypoint>
 
             <waypoint>
-              <time>25</time>
+              <time>26.57</time>
               <pose>-2.5 -247 0 0 0 5.1</pose>
             </waypoint>
           </trajectory>
@@ -1646,9 +1650,10 @@
         </script>
       </actor>
 
-    <!-- Three parallel running vehicles -->
+    <!-- Three running vehicles in front of grocery_store -->
+      <!-- velocity = 10km/h -->
       <actor name="car_2">
-        <pose>-10 -270 0 0 0 0</pose>
+        <pose>-10 -268 0 0 0 0</pose>
         <gravity>0 0 -9.8</gravity>
         <include>
           <name>hatchback_1</name>
@@ -1666,13 +1671,14 @@
             </waypoint>
 
             <waypoint>
-              <time>10</time>
+              <time>18</time>
               <pose>40 -268 0 0 0 0</pose>
             </waypoint>
           </trajectory>
         </script>
       </actor>
 
+      <!-- velocity = 20km/h -->
       <actor name="car_3">
         <pose>-10 -265 0 0 0 0</pose>
         <gravity>0 0 -9.8</gravity>
@@ -1692,13 +1698,14 @@
             </waypoint>
 
             <waypoint>
-              <time>7.5</time>
+              <time>9</time>
               <pose>40 -265 0 0 0 0</pose>
             </waypoint>
           </trajectory>
         </script>
       </actor>
 
+      <!-- velocity = 40km/h -->
       <actor name="car_4">
         <pose>-10 -262 0 0 0 0</pose>
         <gravity>0 0 -9.8</gravity>
@@ -1718,7 +1725,7 @@
             </waypoint>
 
             <waypoint>
-              <time>5</time>
+              <time>4.5</time>
               <pose>40 -262 0 0 0 0</pose>
             </waypoint>
           </trajectory>
